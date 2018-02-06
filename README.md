@@ -9,7 +9,7 @@ It can parse telemetry data, that is coming from satellites NOAA-15/18 (137.350M
 
 # Install: 
 
-git clone <this url>
+git clone https://github.com/dmitryelj/NOAA-telemetry-parser.git
   
 sudo pip install pillow
 
