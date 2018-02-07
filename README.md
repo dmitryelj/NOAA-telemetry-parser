@@ -4,6 +4,8 @@ NOAA satellites telemetry parser
 
 This parser is the addon for this telemetry writer:
 
+https://github.com/nebarnix/Project-Desert-Tortoise/tree/master/POESTIPdemod
+
 https://github.com/nebarnix/Project-Desert-Tortoise/tree/master/POESTIPdemodPortAudio
 
 It can parse telemetry data, that is coming from satellites NOAA-15/18 (137.350MHz) and NOAA-19 (137.770MHz).
@@ -16,11 +18,11 @@ git clone https://github.com/dmitryelj/NOAA-telemetry-parser.git
 
 # Usage
 
-1) Tune SDR# to the proper frequency (see above), save IQ file. 
+Tune SDR# to the proper frequency (see above), save IQ file or use Virtual Audio Cable. 
 
-2) After the satellite will gone, run the demodPOES.exe decoder, packets will be saved in a txt file. 
+After the satellite is gone, run the demodPOES.exe decoder, packets will be saved in a txt file. 
 
-3) Run the parser: 
+Run the parser: 
 
 python noaaParser.py log_file.txt. 
 
@@ -28,9 +30,9 @@ PNG-file with combined image and standalone images in subfolders will be created
 
 # Screenshots
 
-![View](/screenshots/screenshot1.png)
+![View](/Screenshots/screenshot1.png)
 
-![View](/screenshots/screenshot2.png)
+![View](/Screenshots/screenshot2.png)
 
 # Data fields
 
@@ -45,5 +47,7 @@ Data looks like this.
 25.06410i ED E2 0D 09 32 1E 08 20 FC C8 00 AB 0F 04 08 ... 
 
 25.16410i ED E2 0D 09 32 1F 08 20 CC DC F4 48 E0 99 C1 ... 
+
+This parser is displaying them as 16 bit unsigned float, that allows to get some data.
 
 
