@@ -5,6 +5,7 @@ NOAA satellites telemetry parser
 This parser is the addon for this telemetry writer:
 
 https://github.com/nebarnix/Project-Desert-Tortoise/tree/master/POESTIPdemod
+
 https://github.com/nebarnix/Project-Desert-Tortoise/tree/master/POESTIPdemodPortAudio
 
 It can parse telemetry data, that is coming from satellites NOAA-15/18 (137.350MHz) and NOAA-19 (137.770MHz).
