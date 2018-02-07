@@ -1,4 +1,5 @@
 # NOAA-telemetry-parser
+
 NOAA satellites telemetry parser
 
 This parser is the addon for this telemetry writer:
@@ -9,21 +10,27 @@ It can parse telemetry data, that is coming from satellites NOAA-15/18 (137.350M
 
 # Install: 
 
-git clone https://github.com/dmitryelj/NOAA-telemetry-parser.git
-  
 sudo pip install pillow
+
+git clone https://github.com/dmitryelj/NOAA-telemetry-parser.git
 
 # Usage
 
-1) Tune SDR# to the proper frequency (see above), set Virtual Audio Cable as a playing and recording device. 
+1) Tune SDR# to the proper frequency (see above), save IQ file. 
 
-2) When the satellite is coming, run the demodPOESP.exe decoder, packets will be saved in a txt file. 
+2) After the satellite will gone, run the demodPOES.exe decoder, packets will be saved in a txt file. 
 
 3) Run the parser: 
 
 python noaaParser.py log_file.txt. 
 
-Png-file with combined image and standalone images in subfolders will be created.
+PNG-file with combined image and standalone images in subfolders will be created.
+
+# Screenshots
+
+![View](/screenshots/screenshot1.png)
+
+![View](/screenshots/screenshot2.png)
 
 # Data fields
 
